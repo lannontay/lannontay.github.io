@@ -1,64 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-
-  <div class="flex h-screen w-full">
-
-    <div class="w-[60%] bg-blue-700 flex flex-col justify-center px-24">
-      <h1 class="text-white text-6xl font-bold mb-4 ml-16">GoFinance</h1>
-      <p class="text-white text-lg opacity-90 mb-10 ml-16">The most popular peer to peer lending at SEA</p>
-      <div>
-        <button class="bg-blue-500 hover:bg-blue-600 text-white px-10 py-3 rounded-full font-medium transition ml-16">
-          Read More
-        </button>
-      </div>
-    </div>
-
-    <div class="w-[40%] bg-white flex items-center justify-center">
-      <div class="w-full max-w-md">
-        
-        <div class="mb-10">
-          <h2 class="text-[26px] font-bold leading-none text-[#333333] mb-2">Hello Again!</h2>
-          <p class="text-lg text-[#333333]">Welcome Back</p>
-        </div>
-
-        <div class="flex flex-col space-y-6 border-solid">
-          <div class="relative w-full">
-            <div class="absolute inset-y-0 left-0 flex items-center pl-3">
-                <svg class="h-6 w-6 text-[#9ca3af]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-         </svg>
-           </div>
-           <input type="email" class="h-[60px] w-full rounded-full border border-[#d1d5db] bg-white pl-12 pr-4 text-[16px] text-[#333333] placeholder-[#9ca3af] outline-none" placeholder="Email Address">
-           </div>
-         <div class="relative w-full">
-            <div class="absolute inset-y-0 left-0 flex items-center pl-3">
-                <svg class="h-6 w-6 text-[#9ca3af]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a5 5 0 00-5 5v3H6a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2v-8a2 2 0 00-2-2h-1V7a5 5 0 00-5-5zm-3 5a3 3 0 016 0v3H9V7zm3 11a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"></path>
-         </svg>
-           </div>
-           <input type="password" class="h-[60px] w-full rounded-full border border-[#d1d5db] bg-white pl-12 pr-4 text-[16px] text-[#333333] placeholder-[#9ca3af] outline-none" placeholder="Password">
-           </div>
-          
-          <button class="w-full bg-blue-600 text-white text-[14px] font-normal leading-none py-6 rounded-full shadow-lg shadow-blue-200">
-            Login
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex h-screen w-full">
+      <div class="w-[60%] bg-blue-700 flex flex-col justify-center px-24">
+        <h1 class="text-white text-6xl font-bold mb-4 ml-16">GoFinance</h1>
+        <p class="text-white text-lg opacity-90 mb-10 ml-16">
+          The most popular peer to peer lending at SEA
+        </p>
+        <div>
+          <button
+            class="bg-blue-500 hover:bg-blue-600 text-white px-10 py-3 rounded-full font-medium transition ml-16"
+          >
+            Read More
           </button>
+        </div>
+      </div>
 
-          <div class="text-center mt-2">
-            <a href="#" class="text-[#333333 text-sm hover:text-blue-500 transition">Forgot Password</a>
+      <div class="w-[40%] bg-white flex items-center justify-center">
+        <div class="w-full max-w-md">
+          <div class="mb-10">
+            <h2 class="text-[26px] font-bold leading-none text-[#333333] mb-2">
+              Hello Again!
+            </h2>
+            <p class="text-lg text-[#333333]">Welcome Back</p>
+          </div>
+
+          <div class="flex flex-col space-y-6 border-solid">
+            <div class="relative w-full">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.3">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.5 5.25L2.25 4.5H21.75L22.5 5.25V18.75L21.75 19.5H2.25L1.5 18.75V5.25ZM3 6.8025V18H21V6.804L12.465 13.35H11.55L3 6.8025ZM19.545 6H4.455L12 11.8035L19.545 6Z"
+                      fill="#333333"
+                    />
+                  </g>
+                </svg>
+              </span>
+              <input
+                type="email"
+                class="h-[60px] w-full rounded-full border border-[#d1d5db] bg-white pl-12 pr-4 text-[16px] text-[#333333] placeholder-[#9ca3af] outline-none"
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="relative w-full">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.3">
+                    <path
+                      d="M20 12C20 10.897 19.103 10 18 10H17V7C17 4.243 14.757 2 12 2C9.243 2 7 4.243 7 7V10H6C4.897 10 4 10.897 4 12V20C4 21.103 4.897 22 6 22H18C19.103 22 20 21.103 20 20V12ZM9 7C9 5.346 10.346 4 12 4C13.654 4 15 5.346 15 7V10H9V7Z"
+                      fill="#333333"
+                    />
+                  </g>
+                </svg>
+              </span>
+              <input
+                type="password"
+                class="h-[60px] w-full rounded-full border border-[#d1d5db] bg-white pl-12 pr-4 text-[16px] text-[#333333] placeholder-[#9ca3af] outline-none"
+                placeholder="Password"
+              />
+            </div>
+
+            <button
+              class="w-full bg-blue-600 text-white text-[14px] font-normal leading-none py-6 rounded-full shadow-lg shadow-blue-200"
+            >
+              Login
+            </button>
+
+            <div class="text-center mt-2">
+              <a
+                href="#"
+                class="text-[#333333 text-sm hover:text-blue-500 transition"
+                >Forgot Password</a
+              >
+            </div>
+            <button
+              onclick="window.location.href = 'register.html'"
+              class="w-full bg-gray-200 text-gray-700 py-4 rounded-full hover:bg-gray-300 transition-all"
+            >
+              Sign Up Now
+            </button>
           </div>
         </div>
-
       </div>
     </div>
-
-  </div>
-
-</body>
+  </body>
 </html>
